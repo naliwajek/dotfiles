@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "Changing shell to zsh..."
+chsh -s $(which zsh)
+
+echo "Installing slimzsh..."
+git clone --recursive https://github.com/changs/slimzsh.git ~/.slimzsh
+echo 'source "$HOME/.slimzsh/slim.zsh"' >> ~/.zshrc
+
+echo "Seting up (hard) Vim..."
+ln -s $(pwd)/vim ~/.vim
+ln -s $(pwd)/vimrc ~/.vimrc
+
+echo "Done"
