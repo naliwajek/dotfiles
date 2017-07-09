@@ -17,7 +17,4 @@ echo "Installing homebrew..."
 echo "Installing tmux..."
 brew install tmux
 
-echo "Setting up inputrc..."
-ln -s $(pwd)/inputrc ~/.inputrc
-
 echo "Done"
