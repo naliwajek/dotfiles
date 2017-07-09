@@ -1,13 +1,13 @@
 set nocompatible
 filetype off
 
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set expandtab
 
-set number
+set relativenumber
 
-autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+let g:hardtime_default_on = 1
 
 syntax on
 colorscheme nofrils-dark

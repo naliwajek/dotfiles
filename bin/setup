@@ -11,4 +11,13 @@ echo "Seting up (hard) Vim..."
 ln -s $(pwd)/vim ~/.vim
 ln -s $(pwd)/vimrc ~/.vimrc
 
+echo "Installing homebrew..."
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+echo "Installing tmux..."
+brew install tmux
+
+echo "Setting up inputrc..."
+ln -s $(pwd)/inputrc ~/.inputrc
+
 echo "Done"
