@@ -17,4 +17,7 @@ echo "Installing homebrew..."
 echo "Installing tmux..."
 brew install tmux
 
+echo "Installing tree..."
+brew install tree
+
 echo "Done"
