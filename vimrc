@@ -1,9 +1,13 @@
 set nocompatible
 filetype off
 
-set tabstop=4 shiftwidth=4 expandtab
+set autoindent tabstop=4 shiftwidth=4 expandtab
+set incsearch hlsearch ignorecase
 set relativenumber
-set incsearch hlsearch
+set noswapfile
+
+let g:netrw_localrmdir='rm -r'
+let g:netrw_dirhistmax=0
 
 colorscheme nofrils-dark
 let g:nofrils_heavylinenumbers=1
@@ -20,3 +24,5 @@ if executable('ag')
 
   command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
 endif
+
+nmap ; :
