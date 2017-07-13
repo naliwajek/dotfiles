@@ -5,11 +5,11 @@ set tabstop=4 shiftwidth=4 expandtab
 set relativenumber
 set incsearch hlsearch
 
-let g:hardtime_default_on = 1
-
-syntax on
 colorscheme nofrils-dark
 let g:nofrils_heavylinenumbers=1
+let g:nofrils_heavycomments=1
+let g:nofrils_strbackgrounds=1
+syntax on
 
 let g:ctrlp_map = '<c-p>'
 
@@ -20,5 +20,3 @@ if executable('ag')
 
   command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
 endif
-
-
